@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bookshelf App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Bookshelf App</h1>
+
+    <!-- Form untuk menambahkan buku -->
+    <form id="book-form">
+        <input type="text" id="book-title" placeholder="Title" required>
+        <input type="text" id="book-author" placeholder="Author" required>
+        <input type="number" id="book-year" placeholder="Year" required>
+        <label>
+            <input type="checkbox" id="book-complete"> Completed
+        </label>
+        <button type="submit">Add Book</button>
+    </form>
+
+    <!-- Pencarian buku -->
+    <input type="text" id="book-search" placeholder="Search by Title" />
+
+    <!-- Dua rak buku -->
+    <h2>Bookshelf</h2>
+
+    <h3>Not Completed Books</h3>
+    <ul id="not-complete-list"></ul>
+
+    <h3>Completed Books</h3>
+    <ul id="complete-list"></ul>
+
+    <script src="main.js"></script>
+</body>
+</html>
